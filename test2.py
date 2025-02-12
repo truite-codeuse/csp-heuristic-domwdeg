@@ -12,7 +12,10 @@ c2 = NotEqualConstraint({"x1", "x3"})
 c3 = NotEqualConstraint({"x1", "x4"})
 c4 = NotEqualConstraint({"x3", "x4"})
 
-net = Network(set(), set(), "test2data") #Network({x1,x2,x3,x4}, {c1,c2,c3,c4})
+net = Network({x1,x2,x3,x4}, {c1,c2,c3,c4})
+
+# Si vous voulez créer un fichier de test, suivre la syntaxe décrite dans "test2data" et décommentez cette ligne
+# net = Network(set(), set(), "test2data")
 
 bt = BackTracking()
 solved, sol = bt.solve(net, "lexico")
@@ -21,6 +24,6 @@ if solved:
     print("Résolu :")
     for x in sol:
         print(f"{x[0]} -> {x[1]}")
-    print(bt.get_counter())
+    print(f"Nonmbre d'erreurs : {bt.get_counter()}")
 else:
     print("Impossible à résoudre")
