@@ -4,8 +4,8 @@ Après avoir cloné le repertoire, aucune installation n'est nécessaire. Ce pro
 
 ## Lancer le programme
 NE PAS LANCER LES PROGRAMMES CONTENUS DANS :
-- `create_data.py` -> cela va effacer les instances de problèmes utilisées pour le rapport et les remplacer par de nouvelles
-- `expe.py` - cela va relancer le calcul des temps d'exécution des heuristiques et remplacer les données déjà calculées
+- `create_data.py` cela va effacer les instances de problèmes utilisées pour le rapport et les remplacer par de nouvelles
+- `expe.py` cela va relancer le calcul des temps d'exécution des heuristiques et remplacer les données déjà calculées
 
 Pour tester le solveur, utiliser les fichiers `test1.py` et `test2.py` qui vont chacun lancer une résolution pour un problème vu en cours (celui avec la coloration de cartes).
 
